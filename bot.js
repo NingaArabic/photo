@@ -32,6 +32,7 @@ const prefix = '#' //البريفكس أو امر التشغيل
             if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
            };
+	 if(message.channel.id != "731986062037090345") return;
               if (message.content.startsWith(prefix + 'فكك') || message.content.startsWith(prefix+"fkk")) {
                 if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
 
@@ -44,7 +45,7 @@ const prefix = '#' //البريفكس أو امر التشغيل
               };
               message.channel.send('**لديك __15__ ثانيه لتفكيك الكلمه**').then(msg => {
 
- const w = ['./img/w1.png'];//الخلفيه
+ const w = ['./download (7).png'];//الخلفيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
@@ -111,7 +112,9 @@ client.on('message', message => {
 	 if(message.author.bot) return;
   if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
-           };if (message.content.startsWith(prefix + 'لغز') || message.content.startsWith(prefix+"puzzle")) {
+           };
+		 if(message.channel.id != "731986371635445880") return;
+	if (message.content.startsWith(prefix + 'لغز') || message.content.startsWith(prefix+"puzzle")) {
 	if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
 
 const type = require('./quiz.json');
@@ -120,7 +123,7 @@ const filter = response => {
     return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
 };
 message.channel.send('**لديك __15__ ثانيه لحل هذه اللغز**').then(msg => {
- const w = ['./img/w1.png'];//الخلفيه
+ const w = ['./download (7).png'];//الخلفيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
@@ -186,6 +189,7 @@ client.on('message', message => {
      if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
            };
+		 if(message.channel.id != "731986280048623696") return;
     if (message.content.startsWith(prefix+ 'ركب') || message.content.startsWith(prefix+"rkb")) {
       if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
     
@@ -195,7 +199,7 @@ client.on('message', message => {
         return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
     };
     message.channel.send('**لديك __15__ ثانيه لتركيب الكلمه**').then(msg => {
- const w = ['./img/w1.png'];//الخلفيه
+ const w = ['./download (7).png'];//الخلفيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
@@ -266,6 +270,8 @@ client.on('message', message => {
        if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
            };
+		 if(message.channel.id != "731986343629946880") return;
+
       if (message.content.startsWith(prefix + 'اسرع') ||  message.content.startsWith(prefix+"fast")) {
         if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
       
@@ -276,7 +282,7 @@ client.on('message', message => {
       };
       message.channel.send('** لديك __15__ ثانيه لكتابه هذه الكلمه بسرعة**').then(msg => {
       
- const w = ['./img/w1.png'];//الخلفيه
+ const w = ['./download (7).png'];//الخلفيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
@@ -344,6 +350,7 @@ message.channel.sendFile(canvas.toBuffer());
       if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
            };
+		 if(message.channel.id != "731986040520310865") return;
     if (message.content.startsWith(prefix + 'رياضيات') || message.content.startsWith(prefix+"math")) {
       if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
     
@@ -353,7 +360,7 @@ message.channel.sendFile(canvas.toBuffer());
         return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
     };
     message.channel.send('**لديك __15__ ثانيه لحل المسئله**').then(msg => {
- const w = ['./img/w1.png'];//الخلفيه
+ const w = ['./download (7).png'];//الخلفيه
             let Image = Canvas.Image,
             canvas = new Canvas(400, 150),
             ctx = canvas.getContext('2d');
@@ -466,6 +473,8 @@ if (message.content.startsWith(prefix + 'نقاطي') || message.content.startsW
 
 client.on('message' , message => {
   if(message.author.bot) return;
+		 if(message.channel.id != "731986400840253461") return;
+
   if(message.content.startsWith(prefix + "xo")) {
  let array_of_mentions = message.mentions.users.array();
   let symbols = [':o:', ':heavy_multiplication_x:']
@@ -528,6 +537,8 @@ client.on('message' , message => {
  });  
 
 client.on("message", function(message) {
+			 if(message.channel.id != "731986433430126602") return;
+
    if(message.content.startsWith(prefix + "rps")) {
     let messageArgs = message.content.split(" ").slice(1).join(" ");
     let messageRPS = message.content.split(" ").slice(2).join(" ");
@@ -589,7 +600,7 @@ let embed = new Discord.RichEmbed()
 
 🎮 - ${prefix}rps
 ---------------------------------**`)
-.setFooter('Copy Right Reserved For: TC & MG')
+.setFooter('lets be singles ماي نيقا')
 luxy.channel.send({embed:embed});
 }
 });
